@@ -1,0 +1,21 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<style>
+    .e-grid .e-rowcell.customcss {
+        background-color: #f0f8ff;
+    }
+</style>
+
+<ejs-gantt id="Gantt" height="430px" dataSource="ViewBag.DataSource" allowReordering="true">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Left" width="100"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="270" lockColumn="true" customAttributes="@(new { @class = "customcss" })"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="150"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" width="150"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" width="150"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

@@ -1,0 +1,26 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" height="430px" dataSource="ViewBag.DataSource" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId" verified="Verified">
+    </e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Verified" headerText="Verified" displayAsCheckBox="true" type="boolean" textAlign="Center"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.rowDataBound = function (args) {
+            if (args.row && args.row.getAttribute('aria-rowindex') === '3') {
+                args.row.children[3].innerHTML = '';
+            }
+        };
+    });
+</script>

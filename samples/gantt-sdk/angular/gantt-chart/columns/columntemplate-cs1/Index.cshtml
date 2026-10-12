@@ -1,0 +1,21 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" height="450px" dataSource="ViewBag.DataSource" treeColumnIndex="2" allowFiltering="true" allowSorting="true" enableWBS="true" enableAutoWbsUpdate="false" allowSelection="true" projectStartDate="new DateTime(2024, 04, 02)" projectEndDate="new DateTime(2024, 04, 21)" allowRowDragAndDrop="true" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+    <e-gantt-splittersettings columnIndex="4"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" visible="false"></e-gantt-column>
+        <e-gantt-column field="WBSCode" headerText="WBS Code" width="150"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" allowReordering="false" width="260"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="140"></e-gantt-column>
+        <e-gantt-column field="WBSPredecessor" headerText="WBS Predecessor" width="190"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" allowEditing="false" width="130"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress"></e-gantt-column>
+    </e-gantt-columns>
+    <e-gantt-eventmarkers>
+        <e-gantt-eventmarker day="new DateTime(2024, 04, 02)" label="Project Initiation"></e-gantt-eventmarker>
+    </e-gantt-eventmarkers>
+</ejs-gantt>

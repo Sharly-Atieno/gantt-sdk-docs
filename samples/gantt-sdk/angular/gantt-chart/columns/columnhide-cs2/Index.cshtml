@@ -1,0 +1,37 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-button id="show" content="Show Column" cssClass="e-info" click="showColumn"></ejs-button>
+<ejs-button id="hide" content="Hide Column" cssClass="e-info" click="hideColumn"></ejs-button>
+
+<ejs-gantt id="Gantt" height="430px" dataSource="ViewBag.DataSource" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    function showColumn() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var allColumns = gantt.getGanttColumns();
+        if (allColumns.length > 0) {
+            var headerText = allColumns[2].headerText;
+            gantt.showColumn(headerText, 'headerText');
+        }
+    }
+    function hideColumn() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var visibleColumns = gantt.treeGrid.getVisibleColumns();
+        if (visibleColumns.length > 0) {
+            var headerText = visibleColumns[2].headerText;
+            gantt.hideColumn(headerText, 'headerText');
+        }
+    }
+</script>

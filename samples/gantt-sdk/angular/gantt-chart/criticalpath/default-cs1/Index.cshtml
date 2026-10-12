@@ -1,0 +1,10 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="ganttDefault" height="430px" dataSource="ViewBag.DataSource" enableCriticalPath="true"
+    toolbar="@(new List<string>() { "CriticalPath" })">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" allowTaskbarEditing="true" showDeleteConfirmDialog="true">
+    </e-gantt-editsettings>
+</ejs-gantt>
