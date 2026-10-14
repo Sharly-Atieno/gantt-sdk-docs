@@ -174,4 +174,4 @@ The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) wo
 - **Code Examples?** Browse [Kanban Demos](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) and samples
 - **API Details?** See [Kanban API Reference](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html)
 - **Community?** Join the [Syncfusion Community Forum](https://www.syncfusion.com/forums/blazor-components)
-- **What's New?** Check [Release Notes](https://help.syncfusion.com/gantt-sdk/release-notes/)
+- **What's New?** Check [Release Notes](https://help.syncfusion.com/gantt-sdk/release-notes)
