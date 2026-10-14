@@ -38,7 +38,7 @@ The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 * `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
 
-* `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
+* `date picker edit` - [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started) component for date data type.
 
 * `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
 
@@ -51,7 +51,7 @@ The following table describes cell edit type component and their corresponding e
 |`numericedit` | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 }|
 |`dropdownedit` | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) | params: { value: 'Germany' }|
 |`booleanedit` | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) | params: { checked: true}|
-|`datepickeredit` | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) | params: { format:'dd.MM.yyyy' }|
+|`datepickeredit` | [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started) | params: { format:'dd.MM.yyyy' }|
 |`datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | params: { value: new Date() }|
 
 {% tabs %}
