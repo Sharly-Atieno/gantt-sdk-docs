@@ -30,17 +30,17 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column. You can set the [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) based on data type of the column.
 
-* `numeric edit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) component for integers, double, and decimal data types.
+* `numeric edit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/ej1-api-migration) component for integers, double, and decimal data types.
 
-* `default edit` - [`TextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) component for string data type.
+* `default edit` - [`TextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) component for string data type.
 
-* `dropdown edit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component to show all unique values related to that field.
+* `dropdown edit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component to show all unique values related to that field.
 
-* `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
+* `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started) component for boolean data type.
 
-* `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
+* `date picker edit` - [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/date-picker/getting-started) component for date data type.
 
-* `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
+* `date time picker edit` - [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/datetime-picker/getting-started) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Edit).
 
@@ -48,11 +48,11 @@ The following table describes cell edit type component and their corresponding e
 
 |Edit Type |Component |Example|
 |-----|-----|-----|
-|`numericedit` | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 }|
-|`dropdownedit` | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) | params: { value: 'Germany' }|
-|`booleanedit` | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) | params: { checked: true}|
-|`datepickeredit` | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) | params: { format:'dd.MM.yyyy' }|
-|`datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | params: { value: new Date() }|
+|`numericedit` | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 }|
+|`dropdownedit` | [`DropDownList`](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) | params: { value: 'Germany' }|
+|`booleanedit` | [`Checkbox`](https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started) | params: { checked: true}|
+|`datepickeredit` | [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/date-picker/getting-started) | params: { format:'dd.MM.yyyy' }|
+|`datetimepickeredit` | [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/datetime-picker/getting-started) | params: { value: new Date() }|
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -202,15 +202,15 @@ The following table describes different types of editing modes available in Gant
 
 |Action |Description|
 |-----|-----|
-|[`Cell editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
-|[`Dialog editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
-|[`Taskbar editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
+|[`Cell editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
+|[`Dialog editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
+|[`Taskbar editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/task-bar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
 ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> 
 ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [`task dependencies`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [`task dependencies`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-dependency) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 

@@ -15,7 +15,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 ## Localization
 
-This section explains how to localize the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
+This section explains how to localize the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
 
 ## Localizing Kanban Text
 

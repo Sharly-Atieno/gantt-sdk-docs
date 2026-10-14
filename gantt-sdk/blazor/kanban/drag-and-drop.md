@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Drag and Drop Operations in Blazor Kanban
 
-Cards in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) can be dragged and dropped across columns, within columns, across swimlane rows, or between Kanban boards and external components.
+Cards in the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) can be dragged and dropped across columns, within columns, across swimlane rows, or between Kanban boards and external components.
 
 ## Types of drag and drop in kanban
 
