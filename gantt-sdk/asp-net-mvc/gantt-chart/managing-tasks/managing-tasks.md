@@ -40,7 +40,7 @@ The [`columns.editType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 - `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
 
-- `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
+- `date time picker edit` - [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/datetime-picker/getting-started) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Edit).
 
@@ -52,7 +52,7 @@ The following table describes cell edit type component and their corresponding e
 | `dropdownedit`       | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started)     | params: { value: 'Germany' }      |
 | `booleanedit`        | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started)              | params: { checked: true}          |
 | `datepickeredit`     | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)           | params: { format:'dd.MM.yyyy' }   |
-| `datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started)   | params: { value: new Date() }     |
+| `datetimepickeredit` | [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/datetime-picker/getting-started)   | params: { value: new Date() }     |
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
