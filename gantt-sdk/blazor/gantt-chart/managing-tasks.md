@@ -80,7 +80,7 @@ Below is the combined content from the provided markdown sections in bullet poin
   - **dropdownedit**: Uses the [DropDownList](https://blazor.syncfusion.com/documentation/dropdown-list/getting-started) component to display all unique values for a field.
   - **booleanedit**: Uses the [Checkbox](https://blazor.syncfusion.com/documentation/check-box/getting-started) component for editing boolean data.
   - **datepickeredit**: Uses the [DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started) component for editing date data.
-  - **datetimepickeredit**: Uses the [DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started) component for editing date-time data.
+  - **datetimepickeredit**: Uses the [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started) component for editing date-time data.
 
 - **Customization**:
   - You can customize model of the `GanttColumn.EditType` component through the [GanttColumn.EditorSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_EditorSettings).
@@ -491,4 +491,4 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 - [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
 - [How to delete tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/deleting-tasks)
 - [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath))
