@@ -13,15 +13,15 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Accessibility and ARIA Compliance in Blazor Kanban
 
-The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component is built in accordance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) specifications, incorporating appropriate roles, states, and properties. It offers full accessibility support for users relying on assistive technologies (AT) or keyboard navigation.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component is built in accordance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, incorporating appropriate roles, states, and properties. It offers full accessibility support for users relying on assistive technologies (AT) or keyboard navigation.
 
-It adheres to key accessibility standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) , ensuring inclusive design and usability.
+It adheres to key accessibility standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) , ensuring inclusive design and usability.
 
 The following table summarizes the accessibility compliance of the Blazor Kanban component:
 
 | Accessibility Criteria                                                                                              | Compatibility                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                                                    | AA                                                                                                 |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                                                    | AA                                                                                                 |
 | [Section 508 Support](https://blazor.syncfusion.com/documentation/common/accessibility#section-508)                 | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                                               | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Right-To-Left Support                                                                                               | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -44,7 +44,7 @@ The following table summarizes the accessibility compliance of the Blazor Kanban
 
 ## WAI-ARIA attributes
 
-The Blazor Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following `WAI-ARIA` attributes are used in the Kanban component:
+The Blazor Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following `WAI-ARIA` attributes are used in the Kanban component:
 
 | Attributes             | Purpose                                                                                                                                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

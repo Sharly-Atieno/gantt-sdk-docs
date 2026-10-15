@@ -14,11 +14,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Introduction to Syncfusion Blazor Kanban
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) is a powerful and feature-rich UI component designed for visualizing and managing work flows with high performance and flexibility. It provides powerful features including multi key column mapping, swimlane rows, drag and drop card transfers, work-in-progress (WIP) validation, and built-in card editing dialogs. Built for scalability, it enables developers to create responsive task boards for agile project management, issue tracking, and pipeline visualization with ease.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) is a powerful and feature-rich UI component designed for visualizing and managing work flows with high performance and flexibility. It provides powerful features including multi key column mapping, swimlane rows, drag and drop card transfers, work-in-progress (WIP) validation, and built-in card editing dialogs. Built for scalability, it enables developers to create responsive task boards for agile project management, issue tracking, and pipeline visualization with ease.
 
 ## Common use cases
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) is ideal for a wide range of business scenarios:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) is ideal for a wide range of business scenarios:
 
 | Use Case | Description | Key Features |
 |----------|-------------|--------------|
@@ -31,7 +31,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 
 ## Data connectivity
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The Kanban can work with in-memory collections, connect to remote services, or bind complex nested data structures.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The Kanban can work with in-memory collections, connect to remote services, or bind complex nested data structures.
 
 **Data Binding Approaches**
 
@@ -63,7 +63,7 @@ The card is the core unit of work in the Kanban board. The following features co
 
 ## Workflow & interaction
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) provides comprehensive interaction capabilities for moving work across the board:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) provides comprehensive interaction capabilities for moving work across the board:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -86,7 +86,7 @@ The swimlane feature groups cards into horizontal rows for parallel categories o
 
 ## Card editing & dialogs
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) provides built-in editing so users can create and update cards without leaving the board:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) provides built-in editing so users can create and update cards without leaving the board:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -107,7 +107,7 @@ WIP (work-in-progress) validation prevents columns from exceeding their capacity
 
 ## Layout & appearance
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) offers extensive layout and styling options for creating professional boards tailored to any workflow:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) offers extensive layout and styling options for creating professional boards tailored to any workflow:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -120,7 +120,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 
 ## Globalization & accessibility
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
 - **[Localization](./localization#localization)** - Translate the UI into different languages
 - **[Enabling Right-to-Left (RTL) Layout](./localization#enabling-right-to-left-rtl-layout)** - RTL rendering for RTL languages
@@ -137,7 +137,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 
 ## Advanced features
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) includes sophisticated capabilities designed for complex enterprise scenarios:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) includes sophisticated capabilities designed for complex enterprise scenarios:
 
 | Feature | Purpose | Use Case | Key Benefit |
 |---------|---------|----------|-------------|
@@ -146,7 +146,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 
 ## System requirements
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) works with:
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) works with:
 
 - **Blazor Version**: .NET 8.0 or higher
 - **Hosting Models**: Blazor Server, Blazor WebAssembly, Blazor Web App
@@ -171,7 +171,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 ## Support & Resources
 
 - **Questions?** Visit the [Syncfusion Support Portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Kanban Demos](https://www.syncfusion.com/blazor-components/blazor-kanban) and samples
+- **Code Examples?** Browse [Kanban Demos](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) and samples
 - **API Details?** See [Kanban API Reference](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html)
 - **Community?** Join the [Syncfusion Community Forum](https://www.syncfusion.com/forums/blazor-components)
 - **What's New?** Check [Release Notes](https://help.syncfusion.com/gantt-sdk/release-notes)
