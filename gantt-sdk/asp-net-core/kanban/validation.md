@@ -41,4 +41,4 @@ The [`maxCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ka
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/validation.PNG)
+![kanban](./images/validation.png)

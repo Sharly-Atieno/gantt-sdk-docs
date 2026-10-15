@@ -42,7 +42,7 @@ Enables time-based planning through configurable views, scalable timelines, and 
   * [Workweek](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/scheduling-tasks#weekend-or-non-working-days):Configures which weekdays are considered working and which are non-working. This setup influences task planning and progress calculations.
   * [Non-Working Time](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/scheduling-tasks#weekend-or-non-working-days): Excludes specific hours or days from scheduling calculations. 
   * [Holidays](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/holidays): Defines non-working dates within the project timeline to reflect organizational calendars. These dates are excluded from task scheduling and progress calculations.
-  * [Timezone](https://blazor.syncfusion.com/documentation/gantt-chart/timezone): Configures task scheduling based on a specific time zone. By default, it aligns with the system time zone, but can be set to follow any defined time zone to ensure accurate timeline alignment across different regions.
+  * [Timezone](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/timezone): Configures task scheduling based on a specific time zone. By default, it aligns with the system time zone, but can be set to follow any defined time zone to ensure accurate timeline alignment across different regions.
   * [Zooming](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/zooming): Adjusts the timeline scale by modifying cell width and switching between time units. Supports viewing task schedules across various time ranges, from minute-level detail to long-term planning.
  
 **4. Visualization** 

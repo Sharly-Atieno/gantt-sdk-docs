@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Data Binding with Local and Remote Sources in Blazor Kanban
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) uses [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html), which supports both RESTFUL JSON data service binding and IEnumerable binding. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) property of the Kanban can be assigned either an instance of `SfDataManager` or a collection.
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) uses [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html), which supports both RESTFUL JSON data service binding and IEnumerable binding. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) property of the Kanban can be assigned either an instance of `SfDataManager` or a collection.
 
 It supports the following types of data binding:
 
@@ -210,7 +210,7 @@ N> By default, SfDataManager uses ODataAdaptor for remote data-binding.
 
 ### Binding with OData services
 
-[OData](https://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. Data can be retrieved from an OData service using the `SfDataManager`.
+[OData](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. Data can be retrieved from an OData service using the `SfDataManager`.
 
 ```cshtml
 @using Syncfusion.Blazor.Data
