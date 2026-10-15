@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Columns Configuration and Workflow Stages in Blazor Kanban
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) columns represent each stage of workflow process. These column definitions act as the schema for the Kanban board [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) and drive operations such as drag-and-drop, swimlane grouping, and column toggling.
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) columns represent each stage of workflow process. These column definitions act as the schema for the Kanban board [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) and drive operations such as drag-and-drop, swimlane grouping, and column toggling.
 
 ## Single-key mapping
 
