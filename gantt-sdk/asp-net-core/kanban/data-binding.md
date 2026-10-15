@@ -33,7 +33,7 @@ To bind local list data to the Kanban, you can simply assign a list to the [`dat
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/local-data.png)
+![kanban](./images/local-data.png)
 
 N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -52,7 +52,7 @@ To bind remote data to kanban component, assign service data as an instance of `
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/remote-data.png)
+![kanban](./images/remote-data.png)
 
 N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
@@ -84,7 +84,7 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/odata-v4.png)
+![kanban](./images/odata-v4.png)
 
 ### Web API
 
@@ -178,7 +178,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-adaptor.png)
+![kanban](./images/custom-adaptor.png)
 
 ### Sending additional parameters to the server
 
@@ -212,7 +212,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspn
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/http-error.png)
+![kanban](./images/http-error.png)
 
 N> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
@@ -231,6 +231,6 @@ You can use Kanban [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/ajax-data.png)
+![kanban](./images/ajax-data.png)
 
 N> * If you bind the DataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.
