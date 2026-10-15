@@ -8,11 +8,12 @@ platform: gantt-sdk
 control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dimensions, Height, and Width Configuration in Blazor Kanban
 
-This section explains how to configure the height and width of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to achieve responsive and fixed layouts.
+This section explains how to configure the height and width of the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) to achieve responsive and fixed layouts.
 
 The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component allows customization of its overall layout dimensions height and width using three value types:
 

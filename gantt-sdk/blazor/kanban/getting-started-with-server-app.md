@@ -8,11 +8,12 @@ platform: gantt-sdk
 control: Getting Started with Server App - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with Blazor Kanban in Server App
 
-This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs), [Visual Studio Code](https://code.visualstudio.com), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools).
+This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools).
 
 {% tabcontents %}
 

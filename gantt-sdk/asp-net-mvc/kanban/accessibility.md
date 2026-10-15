@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Accessibility - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Accessibility in ASP.NET MVC Kanban | WCAG, ARIA
@@ -42,7 +43,7 @@ The accessibility compliance for the Kanban control is outlined below.
 
 ## WAI-ARIA attributes
 
-The Kanban control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban control:
+The Kanban control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban control:
 
 | Attributes             | Purpose                                                                                                                                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,7 +56,7 @@ The Kanban control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 
 ## Keyboard interaction
 
-The Kanban control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban control.
+The Kanban control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban control.
 
 | **Press**                                | **To do this**                                                  |
 | ---------------------------------------- | --------------------------------------------------------------- |

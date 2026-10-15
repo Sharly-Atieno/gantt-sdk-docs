@@ -5,6 +5,7 @@ description: Learn about Auto Update Hierarchy support in Syncfusion WPF Gantt t
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Auto Update Hierarchy in WPF Gantt
@@ -513,13 +514,32 @@ public class Task : NotificationObject
     /// <summary>
     /// Gets or sets the id value.
     /// </summary>
-    public int Id
+    public int ID
     {
-        get { return this.id; }
+        get
+        {
+            return this.id;
+        }
         set
         {
             this.id = value;
-            RaisePropertyChanged("Id");
+            RaisePropertyChanged("ID");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the Progress value.
+    /// </summary>
+    public double Progress
+    {
+        get
+        {
+            return this.progress;
+        }
+        set
+        {
+            this.progress = value;
+            RaisePropertyChanged("Progress");
         }
     }
 
@@ -632,7 +652,7 @@ public class ViewModel
             Name = "Analysis/Planning",
             StartDate = new DateTime(2012, 7, 3),
             EndDate = new DateTime(2012, 8, 14),
-            Progress = 40d
+            Progress = 60d
         });
 
         taskDetails[0].ChildCollection.Add((new Task()
@@ -641,7 +661,7 @@ public class ViewModel
             Name = "IDentify Components to be Localized",
             StartDate = new DateTime(2012, 7, 3),
             EndDate = new DateTime(2012, 7, 5),
-            Progress = 20d
+            Progress = 60d
         }));
 
         taskDetails[0].ChildCollection.Add((new Task()
@@ -650,7 +670,7 @@ public class ViewModel
             Name = "Ensure file localizability",
             StartDate = new DateTime(2012, 7, 6),
             EndDate = new DateTime(2012, 7, 7),
-            Progress = 20d
+            Progress = 50d
         }));
 
         taskDetails.Add(new Task()
@@ -659,7 +679,7 @@ public class ViewModel
             Name = "Production",
             StartDate = new DateTime(2012, 7, 3),
             EndDate = new DateTime(2012, 7, 14),
-            Progress = 40d
+            Progress = 70d
         });
 
         taskDetails[1].ChildCollection.Add((new Task()
@@ -668,7 +688,7 @@ public class ViewModel
             Name = "Software Components",
             StartDate = new DateTime(2012, 7, 3),
             EndDate = new DateTime(2012, 7, 5),
-            Progress = 20d,
+            Progress = 60d,
         }));
 
         taskDetails[1].ChildCollection.Add((new Task()
@@ -677,7 +697,7 @@ public class ViewModel
             Name = "Localization Component - User Interface",
             StartDate = new DateTime(2012, 7, 6),
             EndDate = new DateTime(2012, 7, 7),
-            Progress = 20d
+            Progress = 70d
         }));
 
         taskDetails.Add(new Task()
@@ -695,7 +715,7 @@ public class ViewModel
             Name = "Review project information",
             StartDate = new DateTime(2012, 7, 3),
             EndDate = new DateTime(2012, 7, 15),
-            Progress = 20d
+            Progress = 80d
         }));
 
         taskDetails[2].ChildCollection.Add((new Task()
@@ -704,7 +724,7 @@ public class ViewModel
             Name = "Localization Component",
             StartDate = new DateTime(2012, 7, 6),
             EndDate = new DateTime(2012, 7, 8),
-            Progress = 20d
+            Progress = 60d
         }));
 
         return taskDetails;

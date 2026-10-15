@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards Customization and Layout Options in ASP.NET Core Kanban
@@ -39,7 +40,7 @@ In the following demo, the [`showHeader`](https://help.syncfusion.com/cr/aspnetc
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/header.PNG)
+![kanban](./images/header.png)
 
 ## Content
 
@@ -60,7 +61,7 @@ You can customize the default card layout using template as per your application
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/card-template.PNG)
+![kanban](./images/card-template.png)
 
 ## Selection
 
@@ -85,4 +86,4 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/multiple-selection.PNG)
+![kanban](./images/multiple-selection.png)

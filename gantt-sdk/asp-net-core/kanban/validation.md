@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # WIP Validation and Work-in-Progress Limits in ASP.NET Core Kanban
@@ -40,4 +41,4 @@ The [`maxCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ka
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/validation.PNG)
+![kanban](./images/validation.png)

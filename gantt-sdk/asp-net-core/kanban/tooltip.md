@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Tooltip and Hover Information in ASP.NET Core Kanban
@@ -30,4 +31,4 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% endtabs %}
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/tooltip.PNG)
+![kanban](./images/tooltip.png)

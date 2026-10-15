@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding with Local and Remote Sources in ASP.NET Core Kanban
@@ -32,7 +33,7 @@ To bind local list data to the Kanban, you can simply assign a list to the [`dat
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/local-data.PNG)
+![kanban](./images/local-data.png)
 
 N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -51,13 +52,13 @@ To bind remote data to kanban component, assign service data as an instance of `
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/remote-data.PNG)
+![kanban](./images/remote-data.png)
 
 N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -70,7 +71,7 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`OData Documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
+The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`OData Documentation`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -83,7 +84,7 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/odata-v4.PNG)
+![kanban](./images/odata-v4.png)
 
 ### Web API
 
@@ -177,7 +178,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-adaptor.PNG)
+![kanban](./images/custom-adaptor.png)
 
 ### Sending additional parameters to the server
 
@@ -211,7 +212,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspn
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/http-error.PNG)
+![kanban](./images/http-error.png)
 
 N> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
@@ -230,6 +231,6 @@ You can use Kanban [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/ajax-data.PNG)
+![kanban](./images/ajax-data.png)
 
 N> * If you bind the DataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.

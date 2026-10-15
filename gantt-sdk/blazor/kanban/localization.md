@@ -8,13 +8,14 @@ platform: gantt-sdk
 control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Globalization and Localization Support in Blazor Kanban
 
 ## Localization
 
-This section explains how to localize the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
+This section explains how to localize the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
 
 ## Localizing Kanban Text
 

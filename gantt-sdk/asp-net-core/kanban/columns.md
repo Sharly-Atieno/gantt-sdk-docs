@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Columns Configuration and Workflow Stages in ASP.NET Core Kanban
@@ -31,7 +32,7 @@ N> The [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/singel-key.PNG)
+![kanban](./images/singel-key.png)
 
 ## Multi-key mapping
 
@@ -48,7 +49,7 @@ Kanban board allows to render a single column by mapping multiple keys using [`k
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/multi-key.PNG)
+![kanban](./images/multi-key.png)
 
 ## Header text
 
@@ -69,7 +70,7 @@ You can customize the column header with any HTML or CSS element using the `temp
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/header-template.PNG)
+![kanban](./images/header-template.png)
 
 ## Toggle columns
 
@@ -88,7 +89,7 @@ N> By default, collapsed column width is set to `50px`.
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/toggle-columns.PNG)
+![kanban](./images/toggle-columns.png)
 
 ### Initially collapsed column
 
@@ -109,7 +110,7 @@ In the following example, the To Do column is collapsed on initialization of Kan
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/initially-collapsed.PNG)
+![kanban](./images/initially-collapsed.png)
 
 ## Drag and Drop
  
@@ -143,4 +144,4 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/stacked-header.PNG)
+![kanban](./images/stacked-header.png)

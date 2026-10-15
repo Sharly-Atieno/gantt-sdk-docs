@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Overview of Task Management Features in ASP.NET MVC Gantt Chart
@@ -37,9 +38,9 @@ The [`columns.editType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 - `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
 
-- `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
+- `date picker edit` - [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started) component for date data type.
 
-- `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
+- `date time picker edit` - [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/datetime-picker/getting-started) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Edit).
 
@@ -50,8 +51,8 @@ The following table describes cell edit type component and their corresponding e
 | `numericedit`        | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 } |
 | `dropdownedit`       | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started)     | params: { value: 'Germany' }      |
 | `booleanedit`        | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started)              | params: { checked: true}          |
-| `datepickeredit`     | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)           | params: { format:'dd.MM.yyyy' }   |
-| `datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started)   | params: { value: new Date() }     |
+| `datepickeredit`     | [`DatePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started)           | params: { format:'dd.MM.yyyy' }   |
+| `datetimepickeredit` | [`DateTimePicker`](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/datetime-picker/getting-started)   | params: { value: new Date() }     |
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Filter Menu with Column Operators in Blazor Gantt Chart
@@ -204,8 +205,8 @@ You can customize the input components in the filter menu of the Syncfusion Blaz
 | String      | [AutoComplete](https://blazor.syncfusion.com/documentation/autocomplete/getting-started)    | Eg: Autofill="false" | [AutoComplete API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfAutoComplete-2.html) |
 | Number      | [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) | Eg: ShowSpinButton="false" | [NumericTextBox API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Inputs.SfNumericTextBox-1.html)                 |
 | Boolean     | [DropDownList](https://blazor.syncfusion.com/documentation/dropdown-list/getting-started)   | Eg: SortOrder="SortOrder.Ascending"  | [DropDownList API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfDropDownList-2.html)                   |
-| Date        | [DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started)         | Eg: WeekNumber="true"    | [DatePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDatePicker-1.html)                         |
-| DateTime    | [DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started) | Eg: ShowClearButton="true"  | [DateTimePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDateTimePicker-1.html)                 |
+| Date        | [DatePicker](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started)         | Eg: WeekNumber="true"    | [DatePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDatePicker-1.html)                         |
+| DateTime    | [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started) | Eg: ShowClearButton="true"  | [DateTimePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDateTimePicker-1.html)                 |
 
 The following sample demonstrates how to disable the autofill feature by setting the `Autofill` parameter to **false** for the **TaskName** column, and how to configure a `NumericTextBox` without a spin button (`ShowSpinButton` set to **false**) for the **TaskID** column.
 

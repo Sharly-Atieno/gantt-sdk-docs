@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Globalization and Localization Support in ASP.NET Core Kanban
@@ -51,7 +52,7 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% endtabs %}
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/localization.PNG)
+![kanban](./images/localization.png)
 
 ## Right to left (RTL)
 
@@ -68,4 +69,4 @@ The Kanban provides an option to switch its text direction and layout from right
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/rtl.PNG)
+![kanban](./images/rtl.png)

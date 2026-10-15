@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Columns with Field Mapping and Formatting in ASP.NET Core Gantt Chart
@@ -18,7 +19,7 @@ Each column is defined using the [field](https://help.syncfusion.com/cr/aspnetco
 
 ## Column types
 
-The ASP.NET Core Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formattingâ€”such as number or dateâ€”based on the column's data.
+The ASP.NET Core Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting—such as number or date—based on the column's data.
 
 **Gantt supports the following column types:**
 
