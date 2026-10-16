@@ -45,18 +45,22 @@ The table below summarizes the accessibility compliance of the Blazor Gantt Char
 
 The Blazor Gantt Chart component implements [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to enhance accessibility. The following ARIA attributes are applied:
 
-| Attributes | Description |
-|------------|-------------|
-| `treegrid (role)` | Applied to the `e-table` element in the Gantt's grid section to indicate a treegrid structure. |
-| `gridcell (role)` | Added to `td` elements within the `e-table` to represent work cells in the Gantt grid. |
-| `columnheader (role)` | Assigned to `th` elements within the `e-table` to denote header cells in the grid. |
-| `separator (role)` | Used for the `e-split-bar` element, representing the splitter between the grid and chart sections. |
-| `dialog (role)` | Applied to the `e-dialog` element for pop-up dialogs in the Gantt. |
-| `toolbar (role)` | Assigned to the `e-gantt-toolbar` element to indicate the toolbar. |
-| `aria-label` | Provides descriptive information for UI elements, such as timeline cells, taskbars, labels, dependency lines, and event markers. |
-| `aria-selected` | Indicates selection state for chart rows, set to **false** by default and `true` when a cell or task is selected. |
-| `aria-expanded` | Used for parent task rows, set to `true` when expanded and **false** when collapsed. |
-| `aria-grabbed` | Applied to taskbars during editing to indicate drag-and-drop interaction. |
+| Selector | Attribute | Usage |
+|----------|-----------|-------|
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridcontent table.e-table` | `role="treegrid"` | Identifies the Gantt task grid as a hierarchical tree grid. |
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridcontent td.e-rowcell` | `role="gridcell"` | Identifies a task data cell in the grid. |
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridheader th.e-headercell` | `role="columnheader"` | Identifies a grid column header. |
+| `.e-gantt-splitter .e-split-bar` | `role="separator"` | Identifies the splitter between the grid and chart sections. |
+| `.e-dialog` | `role="dialog"` | Identifies a Gantt pop-up dialog. |
+| `.e-gantt-toolbar` | `role="toolbar"` | Identifies the Gantt toolbar. |
+| `.e-timeline-single-header-cell`, `.e-timeline-top-header-cell` | `aria-label` | Provides a descriptive label for a timeline header cell. |
+| `.e-taskbar-main-container` | `role="group"`, `aria-label` | Identifies a taskbar group and provides its accessible description. |
+| `.e-connector-line-container` | `role="img"`, `aria-label` | Identifies a dependency line and provides its accessible description. |
+| `.e-event-markers` | `role="region"`, `aria-label` | Identifies an event marker and provides its accessible description. |
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridcontent tr.e-row` | `aria-level` | Indicates the hierarchical level of a task row. |
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridcontent tr.e-row` | `aria-selected` | Indicates whether a task row is selected. |
+| `.e-gantt-tree-grid-pane .e-treegrid .e-gridcontent tr.e-row` | `aria-expanded` | Indicates whether a parent task row is expanded or collapsed. |
+| Tooltip target (for example, `.e-taskbar-main-container`) | `aria-describedby` | Associates the target with its tooltip while the tooltip is displayed. |
 
 ## Keyboard navigation
 
