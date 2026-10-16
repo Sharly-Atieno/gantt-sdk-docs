@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading Animation in ASP.NET Core Gantt Chart | Indicators | Syncfusion
+title: Loading Animation in ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to configure loading indicators in Syncfusion ASP.NET Core Gantt Chart with spinner and shimmer effects for visual feedback during data processing.
 keywords: asp.net core gantt loading animation, loading indicator, spinner, shimmer, loadingindicatortype, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/loading-animation
@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-# Loading Indicators with Spinner and Shimmer in ASP.NET Core Gantt Chart
+# Loading Animation in ASP.NET Core Gantt Chart 
 
 The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLoadingIndicator.html#Syncfusion_EJ2_Gantt_GanttLoadingIndicator_IndicatorType) property, indicators support two types: **Spinner**, a rotating circular animation for quick operations, and **Shimmer**, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
 

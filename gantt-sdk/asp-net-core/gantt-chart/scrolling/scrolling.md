@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Configuring Scrolling Behavior and Positioning in ASP.NET Core Gantt Chart
+# Scrolling in Syncfusion ASP.NET Core Gantt Chart
 
 Scrolling in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 
@@ -58,11 +58,11 @@ You can make the Gantt Chart component responsive by setting its [width](https:/
 
 The ASP.NET Core Gantt Chart component provides built-in support for automatically scrolling to specific tasks and timeline positions, which is especially useful when working with large datasets.
 
-To scroll vertically to a specific task row, use the [selectRow](https://ej2.syncfusion.com/aspnetcore/documentation/api/gantt#selectrow) method to select the desired task and apply [setScrollTop](https://ej2.syncfusion.com/aspnetcore/documentation/api/gantt#setscrolltop) to bring the selected row into view.
+To scroll vertically to a specific task row, use the `selectRow` method to select the desired task and apply `setScrollTop` to bring the selected row into view.
 
-To scroll horizontally to a specific timeline date, use the [scrollToDate](https://ej2.syncfusion.com/aspnetcore/documentation/api/gantt#scrolltodate) method. This helps focus the timeline on a particular point in time.
+To scroll horizontally to a specific timeline date, use the `scrollToDate` method. This helps focus the timeline on a particular point in time.
 
-To scroll directly to a specific task within the timeline, use the [scrollToTask](https://ej2.syncfusion.com/aspnetcore/documentation/api/gantt#scrolltotask) method with the task ID. This ensures the task is visible within the timeline view.
+To scroll directly to a specific task within the timeline, use the `scrollToTask` method with the task ID. This ensures the task is visible within the timeline view.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -77,7 +77,7 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 
 ## Synchronize horizontal scroll between Gantt charts
 
-To synchronize horizontal scrolling across multiple Gantt Chart components, handle the [actionComplete](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
+To synchronize horizontal scrolling across multiple Gantt Chart components, handle the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionComplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

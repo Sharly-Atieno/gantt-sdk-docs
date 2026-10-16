@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling in ASP.NET Core Gantt Chart | Performance | Syncfusion
+title: Virtual Scrolling in ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to configure virtual scrolling in the Syncfusion ASP.NET Core Gantt Chart to efficiently handle large datasets and improve rendering performance.
 keywords: asp.net core gantt virtual scrolling, row virtualization, timeline virtualization, large datasets, performance optimization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scrolling/virtual-scrolling
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Implementing Virtual Scrolling for Performance in ASP.NET Core Gantt Chart
+# Virtual Scrolling in ASP.NET Core Gantt Chart
 
 Virtual scrolling in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects). Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Critical Path in ASP.NET Core Gantt Chart | Project Analysis | Syncfusion
-description: Learn how to identify and visualize the critical path to determine minimum project duration and key impact tasks.
+title: Critical Path in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to identify and visualize the critical path to determine minimum project duration and key impact tasks in the ASP.NET Core Gantt Chart.
 keywords: asp.net core gantt critical path, slack, float, project duration, dependency analysis, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/criticalpath
 platform: gantt-sdk
@@ -40,7 +40,7 @@ The component uses Critical Path Method (CPM) principles to identify critical ta
 ## Critical path setup and configuration
 
 Critical path functionality requires tasks with valid start dates, end dates, and dependencies mapped through the `dependency` field in `taskFields`.
-Enable critical path display by setting [enableCriticalPath](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableCriticalPath) to **true**, or add the `CriticalPath` option to the [toolbar](https://ej2.syncfusion.com/aspnetcore/documentation/api/gantt#toolbar) array to allow interactive toggling. The `getCriticalTasks()` method retrieves all tasks identified as critical at runtime.
+Enable critical path display by setting [enableCriticalPath](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableCriticalPath) to **true**, or add the `CriticalPath` option to the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) array to allow interactive toggling. The `getCriticalTasks()` method retrieves all tasks identified as critical at runtime.
 
 The critical path recalculates automatically when task properties change, including start and end dates, duration modifications, dependency updates, or progress adjustments. This ensures the visualization remains accurate throughout project management workflows.
 

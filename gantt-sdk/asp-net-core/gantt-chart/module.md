@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Modules in ASP.NET Core Gantt Chart | Feature Configuration | Syncfusion
+title: Modules in ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to configure Gantt Chart features in Syncfusion ASP.NET Core applications and register the required Tag Helpers and script resources.
 keywords: asp.net core gantt modules, feature configuration, tag helpers, script resources, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/module

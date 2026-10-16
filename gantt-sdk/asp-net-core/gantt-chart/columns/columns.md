@@ -19,7 +19,7 @@ Each column is defined using the [field](https://help.syncfusion.com/cr/aspnetco
 
 ## Column types
 
-The ASP.NET Core Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting—such as number or date—based on the column's data.
+The ASP.NET Core Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting such as number or date based on the column's data.
 
 **Gantt supports the following column types:**
 
@@ -133,8 +133,8 @@ The Gantt Chart component for ASP.NET Core supports column formatting to customi
 
 ![Column Formatting](../images/columns/column-formatting.png)
 
-> - The Gantt uses the [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
-> - By default, the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/localization).
+> - The Gantt uses the [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) library to format values based on the specified format and culture.
+> - By default, the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 > - The available format codes may vary depending on the data type of the column.
 > - You can also customize the formatting further by providing a custom function to the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property, instead of a format string.
 > - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -160,7 +160,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 {% endhighlight %}
 {% endtabs %}
 
-> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/internationalization#number-formatting) section. -->
+> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) section. -->
 
 ### Date formatting
 
@@ -185,7 +185,7 @@ The Gantt Chart component for ASP.NET Core supports date formatting in columns u
 
 ![Date formatting](../images/columns/date-formatting.png)
 
-> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization/internationalization#date-formatting).
+> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#date-formatting).
 
 ### Format the date column based on localization
 
@@ -289,7 +289,7 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 
 <!-- ### How to prevent checkbox for particular row
 
-You can prevent the checkbox from rendering in a specific row of the Gantt even when [displayAsCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) is set to **true** for the column. This can be done using the [rowDataBound](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/events#rowdatabound) event, where you check the row index and conditionally set the inner HTML of the target cell to an empty string to hide the checkbox.
+You can prevent the checkbox from rendering in a specific row of the Gantt even when [displayAsCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) is set to **true** for the column. This can be done using the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) event, where you check the row index and conditionally set the inner HTML of the target cell to an empty string to hide the checkbox.
 
 The following sample hides the checkbox for the row with `ariaRowIndex` set to 3.
 
@@ -314,7 +314,7 @@ The following screenshot represents the resizing the column using resizer symbol
 
 ### Resizing a column to fit its content using method support
 
-You can resize a column in Gantt to fit its content using the `autoFitColumns` method from the `treeGrid` object. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [dataBound](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/events#databound) event.
+You can resize a column in Gantt to fit its content using the `autoFitColumns` method from the `treeGrid` object. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -358,7 +358,7 @@ The following example illustrates how to dynamically toggle the visibility of th
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnVisibilityProperty/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="columnVisibility.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/columnVisibility.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnVisibilityProperty/columnVisibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 
