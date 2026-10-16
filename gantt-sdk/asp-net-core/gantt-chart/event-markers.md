@@ -65,8 +65,6 @@ You can programmatically show or hide event markers in the Gantt Chart by updati
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/show-hide-eventmaker" %}
-
 ## See also
 
 - [How to bind data to the Gantt chart?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-binding)

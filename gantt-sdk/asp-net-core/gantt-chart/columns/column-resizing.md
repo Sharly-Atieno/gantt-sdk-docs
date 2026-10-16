@@ -49,7 +49,7 @@ The following example demonstrates how the **Task ID** column can be configured 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs2" %}
+![Column resize](../images/column-resize.png)
 
 ## Prevent resizing for particular column
 
@@ -153,5 +153,3 @@ To resize a column on a touch-enabled device:
 **Note:** Touch resizing works the same as desktop drag-and-drop. The column menu's AutoFit option is also available on touch devices for quick width adjustments.
 
 The screenshot below illustrates column resizing on a touch device.
-
-![Column resize](../images/column-resize.png)

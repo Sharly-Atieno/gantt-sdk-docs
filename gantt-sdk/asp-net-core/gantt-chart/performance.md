@@ -46,7 +46,7 @@ Set the [`AutoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2" %}
+![Alt text](./images/virtual-scroll.png)
 
 > When setting the `AutoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
 

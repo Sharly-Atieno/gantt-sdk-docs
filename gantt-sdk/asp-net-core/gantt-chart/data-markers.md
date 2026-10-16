@@ -48,8 +48,6 @@ The following implementation demonstrates comprehensive data marker integration 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers" %}
-
 ![Alt text](./images/indicators.PNG)
 
 ## Custom event bind to data markers
@@ -125,5 +123,3 @@ You can hide data markers programmatically by targeting the `.e-indicator-span` 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-hide/indicator-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-hide" %}
