@@ -109,7 +109,7 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-customize" %}
+![Alt text](./images/indicators.PNG)
 
 ## Hide data markers programmatically
 

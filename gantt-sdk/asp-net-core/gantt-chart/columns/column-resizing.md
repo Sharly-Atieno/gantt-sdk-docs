@@ -26,7 +26,7 @@ Column width can be adjusted by dragging the right edge of the header, with chan
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs1" %}
+![Column resize](../images/column-resize.png)
 
 >* You can disable resizing for a particular column, by specifying [`Columns.AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowResizing) to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -66,7 +66,7 @@ The following example demonstrates how to disable resizing for the **Task ID** c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs3" %}
+![Column resize](../images/column-resize.png)
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [`ResizeStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResizeStart) event.
 
@@ -92,7 +92,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs6" %}
+![Column resize](../images/column-resize.png)
 
 > When the `autoFit` property of the `treeGrid` object in the Gantt instance is set to **true**, the Gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Gantt will ignore any empty space.
 
@@ -111,7 +111,7 @@ The following example demonstrates how to resize a column externally using the [
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs4" %}
+![Column resize](../images/column-resize.png)
 
 > The `refreshColumns` method of the `treeGrid` object in the Gantt instance is used to refresh the Gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -133,7 +133,7 @@ The following example demonstrates how to handle each resizing event separately 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs5" %}
+![Column resize](../images/column-resize.png)
 
 > The `ResizeArgs` object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [`Resizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
 

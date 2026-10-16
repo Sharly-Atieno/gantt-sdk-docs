@@ -48,7 +48,7 @@ The following implementation demonstrates event marker integration within a Gant
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/eventmarkers" %}
+![Alt text](./images/eventmarkers.png)
 
 ![Alt text](./images/eventmarkers.png)
 
