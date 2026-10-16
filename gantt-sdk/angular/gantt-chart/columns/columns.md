@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in Angular Gantt Chart | Field Mapping | Syncfusion
-description: Learn how to configure and customize columns in the Syncfusion ASP.NET Core Gantt Chart using field mapping, formatting, and display options.
+description: Learn how to configure and customize columns in the Syncfusion Angular Gantt Chart using field mapping, formatting, and display options.
 keywords: angular gantt columns, column field, column customization, task data display, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/columns
 platform: gantt-sdk
