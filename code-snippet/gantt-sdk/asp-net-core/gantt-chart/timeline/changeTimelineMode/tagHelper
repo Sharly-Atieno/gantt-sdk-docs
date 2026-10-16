@@ -1,0 +1,16 @@
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <label style="padding-right: 10px;font-weight:bold">Change the timeline mode:</label>
+    <ejs-dropdownlist style="margin-top: 5px;" id="mode" index="0" width="150" dataSource="ViewBag.ModeData" change="onTimelineChange">
+    </ejs-dropdownlist>
+</div>
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource" timelineViewMode="Week">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function onTimelineChange(args) {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.timelineSettings.timelineViewMode = args.value;
+        gantt.refresh();
+    }
+</script>
