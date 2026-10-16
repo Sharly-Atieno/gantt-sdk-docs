@@ -339,6 +339,7 @@ You can lock columns in Gantt Chart component to prevent them from being reorder
 {% endhighlight %}
 {% highlight c# tabtitle="LockedColumn.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/lockedColumn/LockedColumn.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![locked columns](../images/columns/locked-columns.png)
