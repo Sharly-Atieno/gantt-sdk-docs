@@ -5,7 +5,7 @@
         }
     </style>
 	
-	@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => 
+	@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)Model.GanttDataSourceCollection).Height("450px").TaskFields(ts => 
     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
     ).EventMarkers(em =>
             {

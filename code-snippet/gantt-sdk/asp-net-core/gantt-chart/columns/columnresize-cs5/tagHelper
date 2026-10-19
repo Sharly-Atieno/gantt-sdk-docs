@@ -1,7 +1,10 @@
+@page
+@model IndexModel
+
 <div style="margin-left: 180px;">
     <p style="color: red;" id="message"></p>
 </div>
-<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })" allowResizing="true" resizeStart="resizeStart" resizing="resizing" resizeStop="resizeStop">
+<ejs-gantt id='Gantt' height="430px" dataSource="@Model.GanttDataSourceCollection" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })" allowResizing="true" resizeStart="resizeStart" resizing="resizing" resizeStop="resizeStop">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
     </e-gantt-taskfields>
     <e-gantt-columns>

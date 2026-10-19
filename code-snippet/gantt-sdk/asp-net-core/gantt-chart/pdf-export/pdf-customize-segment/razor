@@ -1,5 +1,5 @@
 @(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>
-)ViewBag.DataSource).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).Height("450px").AllowPdfExport(true).TaskFields(ts => ts.Id(
+)Model.GanttDataSourceCollection).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).Height("450px").AllowPdfExport(true).TaskFields(ts => ts.Id(
 "TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Segments("Segments").EditSettings(es =>
 es.AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true)).Columns(col =>
 {

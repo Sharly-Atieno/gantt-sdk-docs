@@ -1,4 +1,7 @@
-<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport" })"
+@page
+@model IndexModel
+
+<ejs-gantt id='GanttContainer' dataSource="@Model.GanttDataSourceCollection" toolbar="@(new List<string>() { "PdfExport" })"
     toolbarClick="toolbarClick" pdfQueryTaskbarInfo="pdfQueryTaskbarInfo" queryTaskbarInfo="queryTaskbarInfo" height="450px" allowPdfExport="true" gridLines="Both" >
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="Subtasks" segments="Segments">
     </e-gantt-taskfields>

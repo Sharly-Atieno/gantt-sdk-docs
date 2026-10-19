@@ -107,33 +107,100 @@ Define a simple task list with hierarchical relationships. The data includes two
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class IndexModel : PageModel
+namespace CoreSamples.Pages
 {
-    public List<GanttDataSource> Tasks = new List<GanttDataSource>()
+    public class IndexModel : PageModel
     {
-        new GanttDataSource() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2024, 04, 01), EndDate = new DateTime(2024, 04, 15) },
-        new GanttDataSource() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2024, 04, 01), Duration = 4, ParentId = 1 },
-        new GanttDataSource() { TaskId = 3, TaskName = "Perform site survey", StartDate = new DateTime(2024, 04, 01), Duration = 4, ParentId = 1 },
-        new GanttDataSource() { TaskId = 4, TaskName = "Soil testing", StartDate = new DateTime(2024, 04, 01), Duration = 3, ParentId = 1 },
-        new GanttDataSource() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2024, 04, 15), EndDate = new DateTime(2024, 04, 25) },
-        new GanttDataSource() { TaskId = 6, TaskName = "Develop floor plan", StartDate = new DateTime(2024, 04, 15), Duration = 5, ParentId = 5 },
-        new GanttDataSource() { TaskId = 7, TaskName = "Estimate project cost", StartDate = new DateTime(2024, 04, 15), Duration = 5, ParentId = 5 }
-    };
+        public List<GanttDataSource> GanttDataSourceCollection { get; set; }
 
-    public void OnGet()
-    {
+        public void OnGet()
+        {
+            GanttDataSourceCollection = GetTaskCollection();
+        }
+
+        private List<GanttDataSource> GetTaskCollection()
+        {
+            return new List<GanttDataSource>()
+            {
+                new GanttDataSource
+                {
+                    TaskId = 1,
+                    TaskName = "Project initiation",
+                    StartDate = new DateTime(2024, 4, 1),
+                    EndDate = new DateTime(2024, 4, 15)
+                },
+                new GanttDataSource
+                {
+                    TaskId = 2,
+                    TaskName = "Identify site location",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 4,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 3,
+                    TaskName = "Perform site survey",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 4,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 4,
+                    TaskName = "Soil testing",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 3,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 5,
+                    TaskName = "Project estimation",
+                    StartDate = new DateTime(2024, 4, 15),
+                    EndDate = new DateTime(2024, 4, 25)
+                },
+                new GanttDataSource
+                {
+                    TaskId = 6,
+                    TaskName = "Develop floor plan",
+                    StartDate = new DateTime(2024, 4, 15),
+                    Duration = 5,
+                    Progress = 50,
+                    ParentId = 5
+                },
+                new GanttDataSource
+                {
+                    TaskId = 7,
+                    TaskName = "Estimate project cost",
+                    StartDate = new DateTime(2024, 4, 15),
+                    Duration = 5,
+                    Progress = 50,
+                    ParentId = 5
+                }
+            };
+        }
     }
-}
 
-public class GanttDataSource
-{
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime? EndDate { get; set; }
-    public int? Duration { get; set; }
-    public int? Progress { get; set; }
-    public int? ParentId { get; set; }
+    public class GanttDataSource
+    {
+        public int TaskId { get; set; }
+
+        public string TaskName { get; set; }
+
+        public DateTime? StartDate { get; set; }
+
+        public DateTime? EndDate { get; set; }
+
+        public int? Duration { get; set; }
+
+        public int? Progress { get; set; }
+
+        public int? ParentId { get; set; }
+    }
 }
 
 {% endhighlight %}
@@ -173,7 +240,7 @@ Add the Gantt control in the **~/Pages/Index.cshtml** file and bind the task col
 @page
 @model IndexModel
 
-<ejs-gantt id="Gantt" height="450px" dataSource="@Model.Tasks">
+<ejs-gantt id="Gantt" height="450px" dataSource="@Model.GanttDataSourceCollection">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" parentId="ParentId">
     </e-gantt-taskfields>
 </ejs-gantt>
@@ -244,7 +311,7 @@ Use the `actionFailure` event to capture and handle errors:
 @page
 @model IndexModel
 
-<ejs-gantt id="Gantt" height="450px" dataSource="@Model.Tasks" actionFailure="actionFailure">
+<ejs-gantt id="Gantt" height="450px" dataSource="@Model.GanttDataSourceCollection" actionFailure="actionFailure">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" parentId="ParentId">
     </e-gantt-taskfields>
 </ejs-gantt>

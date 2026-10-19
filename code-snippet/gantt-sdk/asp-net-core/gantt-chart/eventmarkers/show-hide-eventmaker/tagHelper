@@ -1,7 +1,10 @@
+@page
+@model IndexModel
+
 <div style="margin-bottom:20px">
     <button id='toggleBtn' class="e-btn" onclick="toggleEventMarkers()">Disable Event Markers</button>
 </div>
-<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.dataSource" eventMarkers="ViewBag.EventMarkers">
+<ejs-gantt id='Gantt' height="430px" dataSource="@Model.GanttDataSourceCollection" eventMarkers="@Model.EventMarkers">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentId="ParentId">
     </e-gantt-taskfields>
 </ejs-gantt>

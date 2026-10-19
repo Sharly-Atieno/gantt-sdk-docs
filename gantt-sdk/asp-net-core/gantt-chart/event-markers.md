@@ -43,7 +43,7 @@ The following implementation demonstrates event marker integration within a Gant
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/eventmarkers/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Eventmarkers.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/eventmarkers/eventmarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -60,7 +60,7 @@ You can programmatically show or hide event markers in the Gantt Chart by updati
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/show-hide-eventmaker/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Show-hide-eventmaker.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/show-hide-eventmaker/show-hide-eventmaker.cs %}
 {% endhighlight %}
 {% endtabs %}

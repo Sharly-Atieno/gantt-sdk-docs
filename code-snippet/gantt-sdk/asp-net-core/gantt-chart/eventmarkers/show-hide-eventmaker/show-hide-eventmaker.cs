@@ -1,20 +1,31 @@
-public IActionResult Index()
-{
-    ViewBag.dataSource = GanttData.ProjectNewData();
-    List<object> EventMarkers = new List<object>();
-    EventMarkers.Add(new { day = "04/09/2019", label = "Research phase" });
-    EventMarkers.Add(new { day = "04/30/2019", label = "Design phase" });
-    EventMarkers.Add(new { day = "05/23/2019", label = "Production phase" });
-    EventMarkers.Add(new { day = "06/20/2019", label = "Sales and marketing phase" });
-    ViewBag.EventMarkers = EventMarkers;
-    return View();
-}
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public static class GanttData
+namespace CoreSamples.Pages
 {
-    public static List<GanttDataSource> ProjectNewData()
+    public class IndexModel : PageModel
     {
-        List<GanttDataSource> records = new List<GanttDataSource>()
+        public List<GanttDataSource> GanttDataSourceCollection { get; set; }
+
+        public List<object> EventMarkers { get; set; }
+
+        public void OnGet()
+        {
+            GanttDataSourceCollection = GanttData.ProjectNewData();
+            EventMarkers = new List<object>()
+            {
+                new { day = "04/09/2019", label = "Research phase" },
+                new { day = "04/30/2019", label = "Design phase" },
+                new { day = "05/23/2019", label = "Production phase" },
+                new { day = "06/20/2019", label = "Sales and marketing phase" }
+            };
+        }
+    }
+
+    public static class GanttData
+    {
+        public static List<GanttDataSource> ProjectNewData()
+        {
+            List<GanttDataSource> records = new List<GanttDataSource>()
         {
             new GanttDataSource() { TaskId = 1, TaskName = "Product Concept", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
             new GanttDataSource() { TaskId = 2, TaskName = "Defining the product and its usage", StartDate = new DateTime(2019, 04, 02), Duration = 3, Progress = 30, ParentId = 1 },

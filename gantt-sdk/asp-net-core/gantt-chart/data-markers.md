@@ -43,7 +43,7 @@ The following implementation demonstrates comprehensive data marker integration 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Datamarkers.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/datamarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -104,7 +104,7 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-customize/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Indicator-customize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-customize/indicator-customize.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +119,7 @@ You can hide data markers programmatically by targeting the `.e-indicator-span` 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-hide/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Indicator-hide.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-hide/indicator-hide.cs %}
 {% endhighlight %}
 {% endtabs %}

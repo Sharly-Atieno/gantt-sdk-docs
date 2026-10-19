@@ -21,7 +21,7 @@ Column width can be adjusted by dragging the right edge of the header, with chan
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs1/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs1/columnresize-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -44,7 +44,7 @@ The following example demonstrates how the **TaskID** column can be configured w
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs2/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs2/columnresize-cs2.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -61,7 +61,7 @@ The following example demonstrates how to disable resizing for the **TaskID** co
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs3/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs3/columnresize-cs3.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -87,7 +87,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs6/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs6/columnresize-cs6.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -106,7 +106,7 @@ The following example demonstrates how to resize a column externally using the [
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs4/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs4/columnresize-cs4.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -128,7 +128,7 @@ The following example demonstrates how to handle each resizing event separately 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs5/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnResize.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnresize-cs5/columnresize-cs5.cs %}
 {% endhighlight %}
 {% endtabs %}

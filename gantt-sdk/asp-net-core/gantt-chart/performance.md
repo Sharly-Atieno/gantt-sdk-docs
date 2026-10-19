@@ -41,7 +41,7 @@ Set the [`AutoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcor
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/virtual-scroll-cs2.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -23,7 +23,7 @@ Set the exported PDF file name using the `fileName` property in `pdfExportProper
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/filename/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="File-name.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/filename/file-name.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -36,7 +36,7 @@ Adjust page orientation to **Portrait** or **Landscape** using the `pageOrientat
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pageorientation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Page-orientation.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pageorientation/page-orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +65,7 @@ The supported page sizes are:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/page-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Page-size.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/page-size/page-size.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -78,7 +78,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/currentviewdata/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Current-view-data.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/currentviewdata/current-view-data.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -91,7 +91,7 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/enablefooter/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Enable-footer.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/enablefooter/enable-footer.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -104,7 +104,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/hiddencolumns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hidden-columns.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/hiddencolumns/hidden-columns.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +117,7 @@ The visibility of predecessor lines in the exported PDF document can be controll
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/connectorlines/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Connector-lines.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/connectorlines/connector-lines.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -134,7 +134,7 @@ In the following example, the **Duration** column is initially hidden in the Gan
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/showhidecolumns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Showhide-columns.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/showhidecolumns/showhide-columns.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -149,7 +149,7 @@ In the following sample, the background color is set for **Progress** column in 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/cellcustomization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Cell-customization.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/cellcustomization/cell-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -164,7 +164,7 @@ In the following sample, the header background color is set for timeline cells i
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/timelinecustomization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Timeline-customization.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/timelinecustomization/timeline-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -179,7 +179,7 @@ In the following sample, the taskbar background color is customized in the chart
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/taskbarcustomization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Taskbar-customization.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/taskbarcustomization/taskbar-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -192,7 +192,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/customtheme/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-theme.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/customtheme/custom-theme.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -207,7 +207,7 @@ The `taskSegmentStyles` property contains a collection of style properties for t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-customize-segment/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pdf-customize-segment.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-customize-segment/pdf-customize-segment.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -226,7 +226,7 @@ In the following sample, the hyperlinks and images are exported to PDF using the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-columnTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="PDF-columnTemplate.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-columnTemplate/pdf-columnTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -243,7 +243,7 @@ In the following sample, taskbar templates with images and text are exported to 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-taskbar-Template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pdfexport-taskbar-Template.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-taskbar-Template/pdfexport-taskbar-Template.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -260,7 +260,7 @@ In the following sample, task label template with images and text are exported t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-tasklabel-Template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pdfexport-tasklabel-Template.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-tasklabel-Template/pdfexport-tasklabel-Template.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -277,7 +277,7 @@ In the following sample, header template with images and text are exported to PD
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-header-Template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pdfexport-header-Template.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-header-Template/pdfexport-header-Template.cs %}
 {% endhighlight %}
 {% endtabs %}
