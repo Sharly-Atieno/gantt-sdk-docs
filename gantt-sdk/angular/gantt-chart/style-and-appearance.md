@@ -330,7 +330,7 @@ Below is a complete example demonstrating how to customize multiple aspects of t
 {% include code-snippet/gantt-sdk/angular/gantt-chart/style-appearance-cs1/src/main.ts %}
 {% endhighlight %}
 
-{% highlight htnl tabtitle="index.html" %}
+{% highlight html tabtitle="index.html" %}
 {% include code-snippet/gantt-sdk/angular/gantt-chart/style-appearance-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
