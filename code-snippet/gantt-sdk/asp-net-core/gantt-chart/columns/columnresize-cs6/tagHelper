@@ -6,7 +6,8 @@
     <ejs-dropdownlist style="margin-top: 5px;" id="mode" index="0" width="150" dataSource="@Model.ModeData" change="valueChange">
     </ejs-dropdownlist>
 </div>
-<ejs-gantt id='Gantt' height="430px" allowResizing="true" dataSource="@Model.GanttDataSourceCollection" treeColumnIndex="1" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })">
+<ejs-gantt id='Gantt' height="430px" allowResizing="true" dataSource="@Model.GanttDataSourceCollection" treeColumnIndex="1">
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
     </e-gantt-taskfields>
     <e-gantt-columns>

@@ -12,7 +12,8 @@
     <button id="button" class="e-btn" onclick="onExternalResize()">Resize</button>
 </div>
 <div style="margin-top: 20px;">
-<ejs-gantt id='Gantt' height="430px" dataSource="@Model.GanttDataSourceCollection" treeColumnIndex="1" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })">
+<ejs-gantt id='Gantt' height="430px" dataSource="@Model.GanttDataSourceCollection" treeColumnIndex="1">
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
     </e-gantt-taskfields>
     <e-gantt-columns>
