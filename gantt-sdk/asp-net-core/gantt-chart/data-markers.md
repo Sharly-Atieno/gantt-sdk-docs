@@ -60,37 +60,14 @@ Data markers support interactive functionality through click event binding, enab
 
 The following implementation demonstrates how to open the edit dialog for a specific task when its data marker is clicked:
 
-```cshtml
-<ejs-gantt id="Gantt" height="450px" dataSource="Tasks"
-           taskFields="TaskFields"
-           editSettings="EditSettings"
-           toolbar="Toolbar"
-           dataBound="dataBound">
-</ejs-gantt>
-
-<script>
-    function dataBound() {
-        var gantt = document.getElementById("Gantt").ej2_instances[0];
-        var elements = document.querySelectorAll('.e-indicator-span');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener('click', function (event) {
-                // Find the task row that contains the clicked indicator.
-                var indicatorElement = event.target;
-                var taskRow = indicatorElement.closest('tr.e-chart-row');
-                if (taskRow && gantt) {
-                    // Get the task ID from the row data.
-                    var rowIndex = parseInt(taskRow.getAttribute('data-rowindex') || '0', 10);
-                    var record = gantt.flatData[rowIndex];
-                    if (record && record.ganttProperties.taskId) {
-                        // Open edit dialog for the specific task.
-                        gantt.openEditDialog(record.ganttProperties.taskId);
-                    }
-                }
-            });
-        }
-    }
-</script>
-```
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/custom-event-bind/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/custom-event-bind/custom-event-bind.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ![Custom event bind to data markers](./images/custom-event-datamarkers.gif)
 
