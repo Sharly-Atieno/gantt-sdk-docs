@@ -6,7 +6,7 @@
     rowHeight="60" parentTaskbarTemplate="#ParentTaskbarTemplate" resources="@Model.GanttResourcesCollection"
     taskbarTemplate="#TaskbarTemplate" milestoneTemplate="#MilestoneTemplate">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
-        progress="Progress" child="SubTasks" resourceInfo="ResourceId">
+        progress="Progress" parentId="ParentId" resourceInfo="ResourceId">
     </e-gantt-taskfields>
     <e-gantt-columns>
         <e-gantt-column field="TaskId" headerText="Task Id" width="50"></e-gantt-column>
