@@ -31,11 +31,11 @@ Virtualization techniques significantly improve application efficiency when hand
 
 ### Optimizing performance with AutoCalculateDateScheduling
 
-By default, the Gantt Chart control automatically calculates start and end dates in the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
+By default, the Gantt Chart control automatically calculates start and end dates in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
 
-Set the [`AutoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
+Set the [autoCalculateDateScheduling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
 
-**Important**: When disabling `AutoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
+**Important**: When disabling `autoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -48,11 +48,11 @@ Set the [`AutoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcor
 
 ![Alt text](./images/virtual-scroll.png)
 
-> When setting the `AutoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
+> When setting the `autoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 ### Optimizing custom content rendering
 
-When integrating images or template elements into Gantt columns, use the [Column Template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) feature instead of customizing data through the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) or [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
+When integrating images or template elements into Gantt columns, use the [Column Template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) feature instead of customizing data through the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) or [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
 
 ### Performance benchmarks
 
@@ -84,6 +84,7 @@ The following tables show typical load times for various Gantt configurations, c
 | + Predecessor                   | 5.9                 |
 | + Resources                     | 6.5                 |
 | + Split taskbars                | 10.6                |
+
 
 ## Avoiding maxJsonLength errors with large datasets
 

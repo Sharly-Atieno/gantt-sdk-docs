@@ -33,7 +33,7 @@ Data markers represent schedule events for specific tasks through visual indicat
 
 **Data structure requirements**: Data markers are defined in the data source as arrays of objects containing marker specifications. Each marker object includes date information, visual styling, identification details, and optional tooltip content for enhanced user interaction.
 
-**Mapping configuration**: The marker array connects to the Gantt Chart control through the [`TaskFields.Indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property mapping. This configuration establishes the relationship between data source marker definitions and control rendering logic.
+**Mapping configuration**: The marker array connects to the Gantt Chart control through the [taskFields.indicators](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property mapping. This configuration establishes the relationship between data source marker definitions and control rendering logic.
 
 **Multiple marker support**: Tasks can display multiple data markers simultaneously, allowing comprehensive event tracking within individual task contexts. Each marker maintains independent configuration while sharing the same task timeline space.
 
@@ -48,32 +48,33 @@ The following implementation demonstrates comprehensive data marker integration 
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](./images/indicators.PNG)
+![Data markers](./images/datamarkers.png)
 
 ## Custom event bind to data markers
 
 Data markers support interactive functionality through click event binding, enabling custom actions when markers are selected. This interaction capability allows the implementation of detailed views, status updates, or navigation to related information based on marker context.
 
-**Event binding implementation**: Click events are bound to data markers using the [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event of the Gantt Chart control. This event fires after data binding completes, ensuring all marker elements are rendered and available for event attachment.
+**Event binding implementation**: Click events are bound to data markers using the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event of the Gantt Chart control. This event fires after data binding completes, ensuring all marker elements are rendered and available for event attachment.
 
 **DOM element selection**: Data markers render with the CSS class **.e-indicator-span**, which serves as the selector for identifying marker elements within the DOM. This class provides a reliable reference for event binding regardless of marker styling or content variations.
 
 The following implementation demonstrates how to open the edit dialog for a specific task when its data marker is clicked:
 
 ```cshtml
-<ejs-gantt id="Gantt" height="450px" dataSource="Tasks"
-           taskFields="TaskFields"
-           editSettings="EditSettings"
-           toolbar="Toolbar"
-           dataBound="dataBound">
-</ejs-gantt>
+@page
+@model IndexModel
 
+<ejs-gantt id='Gantt' height="450px" dataSource="@Model.GanttDataSourceCollection" editSettings="@(new Syncfusion.EJ2.Gantt.GanttEditSettings { AllowEditing = true })" toolbar="@(new List<string>() { "Edit" })" dataBound="dataBound">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId" indicators="Indicators">
+    </e-gantt-taskfields>
+</ejs-gantt>
 <script>
     function dataBound() {
         var gantt = document.getElementById("Gantt").ej2_instances[0];
         var elements = document.querySelectorAll('.e-indicator-span');
         for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener('click', function (event) {
+            elements[i].addEventListener('click', function(event) {
                 // Find the task row that contains the clicked indicator.
                 var indicatorElement = event.target;
                 var taskRow = indicatorElement.closest('tr.e-chart-row');
@@ -109,7 +110,7 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](./images/indicators.PNG)
+![Custom styling for indicator span](./images/datamarkers-styling.png)
 
 ## Hide data markers programmatically
 
@@ -123,3 +124,5 @@ You can hide data markers programmatically by targeting the `.e-indicator-span` 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/indicator-hide/indicator-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Hide data markers programmatically](./images/datamarkers-hide-programmatically.gif)

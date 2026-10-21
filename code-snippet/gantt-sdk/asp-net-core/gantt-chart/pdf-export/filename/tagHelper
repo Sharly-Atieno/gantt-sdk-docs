@@ -11,9 +11,9 @@
         var gantt = document.getElementById("GanttContainer").ej2_instances[0];
         if (args.item.id === 'GanttContainer_pdfexport') {
             var exportProperties = {
-                fileName: "new.pdf"
+                fileName: "ProjectPlan.pdf"
             };
             gantt.pdfExport(exportProperties);
-            }
+        }
     }
 </script>

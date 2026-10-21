@@ -33,7 +33,7 @@ namespace CoreSamples.Pages
                     Indicators = new List<IndicatorsModel>()
                     {
                         new IndicatorsModel { date = "04/08/2019", iconClass = "e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::before", name = "Custom String", tooltip = "Follow up" },
-                        new IndicatorsModel { date = "04/11/2019", iconClass = "e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::before", name = "<span style='color:red'>String Template</span>" }
+                        new IndicatorsModel { date = "04/15/2019", iconClass = "e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::before", name = "<span style='color:red'>String Template</span>" }
                     }
                 },
                 new GanttDataSource

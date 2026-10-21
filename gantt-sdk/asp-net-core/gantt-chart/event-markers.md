@@ -19,13 +19,13 @@ Understanding event markers implementation enables effective visualization of pr
 
 Event markers utilize specific properties to define their positioning, appearance, and identification within the project timeline:
 
-**Date positioning**: The [`Day`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Day) property establishes the exact timeline date where the marker appears. This date value determines marker placement across the entire vertical timeline, ensuring accurate project event representation.
+**Date positioning**: The [Day](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Day) property establishes the exact timeline date where the marker appears. This date value determines marker placement across the entire vertical timeline, ensuring accurate project event representation.
 
-**Descriptive labeling**: The [`Label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Label) property provides descriptive text that identifies the marker's purpose or significance. Labels enhance user understanding by clearly indicating what project event the marker represents.
+**Descriptive labeling**: The [Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Label) property provides descriptive text that identifies the marker's purpose or significance. Labels enhance user understanding by clearly indicating what project event the marker represents.
 
-**Visual customization**: The [`CssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_CssClass) property enables custom styling through CSS class applications. This property allows distinctive visual treatment for different marker types, supporting color coding, styling variations, and brand consistency.
+**Visual customization**: The [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_CssClass) property enables custom styling through CSS class applications. This property allows distinctive visual treatment for different marker types, supporting color coding, styling variations, and brand consistency.
 
-**Vertical adjustment**: The [`Top`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Top) property specifies the vertical offset (in pixels) of the marker from the top of the chart pane's content area. This property helps prevent visual overlap when multiple markers share the same date, ensuring clear and organized marker placement.
+**Vertical adjustment**: The [Top](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Top) property specifies the vertical offset (in pixels) of the marker from the top of the chart pane's content area. This property helps prevent visual overlap when multiple markers share the same date, ensuring clear and organized marker placement.
 
 ## Event marker configuration
 
@@ -33,7 +33,7 @@ Event markers render as vertical lines positioned at specific dates across the e
 
 **Timeline integration**: Event markers integrate seamlessly with the Gantt timeline, appearing as vertical indicators that extend from the top to the bottom of the chart area. This comprehensive visibility ensures important dates remain visible during scrolling, zooming, or filtering operations.
 
-**Configuration requirements**: Event markers can be initialized using the [`EventMarkers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property of the Gantt control to enable rendering functionality. This property manages marker positioning, styling, and timeline integration logic.
+**Configuration requirements**: Event markers can be initialized using the [EventMarkers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property of the Gantt control to enable rendering functionality. This property manages marker positioning, styling, and timeline integration logic.
 
 **Multiple marker support**: The control supports multiple event markers simultaneously, allowing comprehensive tracking of various project-critical dates within the same timeline view. Each marker maintains independent configuration while sharing the common timeline space.
 
@@ -48,13 +48,11 @@ The following implementation demonstrates event marker integration within a Gant
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](./images/eventmarkers.png)
-
-![Alt text](./images/eventmarkers.png)
+![Event markers](./images/event-markers.png)
 
 ## Programmatically show and hide event markers
 
-You can programmatically show or hide event markers in the Gantt Chart by updating the [`EventMarkers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property from script using the Gantt instance.
+You can programmatically show or hide event markers in the Gantt Chart by updating the [EventMarkers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property from script using the Gantt instance.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,6 +62,8 @@ You can programmatically show or hide event markers in the Gantt Chart by updati
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/eventmarkers/show-hide-eventmaker/show-hide-eventmaker.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Programmatically show and hide event markers](./images/event-markers-hide-programmatically.gif)
 
 ## See also
 

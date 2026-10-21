@@ -25,33 +25,78 @@ Ensure the following prerequisites are installed:
 - Basic knowledge of ASP.NET Core Razor Pages
 - A valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key for commercial use. You can obtain a key from your [Syncfusion account](https://www.syncfusion.com/account) and register it as shown in the [licensing documentation](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration).
 
+To get started quickly with the ASP.NET Core Gantt control, you can check out this video:
+
+{% youtube "https://www.youtube.com/watch?v=tILyz8PyE6A" %}
+
 ## Create an ASP.NET Core Web App with Razor Pages
 
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
 You can create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
 
-Alternatively, using the terminal:
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight bash tabtitle="CMD" %}
+{% highlight C# tabtitle="Terminal" %}
 
-dotnet new webapp -o SyncfusionGanttApp
-cd SyncfusionGanttApp
+dotnet new webapp -o GanttSample
+code -r GanttSample
 
 {% endhighlight %}
 {% endtabs %}
+
+Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio-code#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Install the required NuGet packages
 
 Install the [Syncfusion.AspNetCore.Gantt](https://www.nuget.org/packages/Syncfusion.AspNetCore.Gantt) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
-{% tabs %}
-{% highlight bash tabtitle="Terminal" %}
+{% tabcontents %}
 
-dotnet add package Syncfusion.AspNetCore.Gantt
-dotnet add package Syncfusion.AspNetCore.Themes
+{% tabcontent Visual Studio %}
+
+1. Go to _Tools → NuGet Package Manager → Manage NuGet Packages for Solution_.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.Gantt` and `Syncfusion.AspNetCore.Themes`) and install them.
+
+Alternatively, you can install the same packages using the Package Manager Console with the following commands.
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager Console" %}
+
+Install-Package Syncfusion.AspNetCore.Gantt -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following commands.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.Gantt --version {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Add ASP.NET Core tag helpers
 
@@ -68,7 +113,7 @@ After the packages are installed, open the **~/Pages/\_ViewImports.cshtml** file
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the stylesheet and script references inside the `<head>` of **~/Pages/Shared/\_Layout.cshtml** file.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/\_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -208,7 +253,7 @@ namespace CoreSamples.Pages
 
 ## Configure task fields mapping
 
-Map the data fields to Gantt Chart properties using the `<e-gantt-taskfields>` tag helper in **~/Pages/Index.cshtml**:
+Use the `taskFields` configuration to map the fields in your data source to the corresponding Gantt task properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -232,19 +277,14 @@ Map the data fields to Gantt Chart properties using the `<e-gantt-taskfields>` t
 
 ## Render the ASP.NET Core Gantt Chart control
 
-Add the Gantt control in the **~/Pages/Index.cshtml** file and bind the task collection using the `dataSource` property.
+Add the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in the **~/Pages/Index.cshtml** file and bind your task collection to it using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-
-@page
-@model IndexModel
-
-<ejs-gantt id="Gantt" height="450px" dataSource="@Model.GanttDataSourceCollection">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" parentId="ParentId">
-    </e-gantt-taskfields>
-</ejs-gantt>
-
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/getting-started/gantt/tagHelper %}
+{% endhighlight %}
+{% highlight cs tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/getting-started/gantt/gantt-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -256,7 +296,17 @@ Add the Gantt control in the **~/Pages/Index.cshtml** file and bind the task col
 
 ## Run the application
 
-Start the application with:
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
 
 {% tabs %}
 {% highlight bash tabtitle="Terminal" %}
@@ -265,6 +315,10 @@ dotnet run
 
 {% endhighlight %}
 {% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 This command:
 - Builds and launches the ASP.NET Core application

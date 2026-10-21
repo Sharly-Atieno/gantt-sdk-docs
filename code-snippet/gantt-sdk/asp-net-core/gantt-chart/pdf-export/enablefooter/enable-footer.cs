@@ -29,6 +29,7 @@ namespace CoreSamples.Pages
                     StartDate = new DateTime(2019, 4, 2),
                     Duration = 4,
                     Progress = 50,
+                    Verified = true,
                     ParentId = 1
                 },
                 new GanttDataSource
@@ -47,13 +48,14 @@ namespace CoreSamples.Pages
                     StartDate = new DateTime(2019, 4, 2),
                     Duration = 4,
                     Progress = 50,
+                    Verified = true,
                     ParentId = 1
                 },
                 new GanttDataSource
                 {
                     TaskId = 5,
                     TaskName = "Project Estimation",
-                    StartDate = new DateTime(2019, 4, 2),
+                    StartDate = new DateTime(2019, 4, 4),
                     EndDate = new DateTime(2019, 4, 21)
                 },
                 new GanttDataSource
@@ -72,6 +74,7 @@ namespace CoreSamples.Pages
                     StartDate = new DateTime(2019, 4, 4),
                     Duration = 3,
                     Progress = 50,
+                    Verified = true,
                     ParentId = 5
                 },
                 new GanttDataSource
@@ -81,6 +84,7 @@ namespace CoreSamples.Pages
                     StartDate = new DateTime(2019, 4, 4),
                     Duration = 3,
                     Progress = 50,
+                    Verified = true,
                     ParentId = 5
                 }
             };
@@ -90,17 +94,12 @@ namespace CoreSamples.Pages
     public class GanttDataSource
     {
         public int TaskId { get; set; }
-
         public string TaskName { get; set; }
-
         public DateTime? StartDate { get; set; }
-
         public DateTime? EndDate { get; set; }
-
         public int? Duration { get; set; }
-
         public int? Progress { get; set; }
-
+        public bool Verified { get; set; }
         public int? ParentId { get; set; }
     }
 }

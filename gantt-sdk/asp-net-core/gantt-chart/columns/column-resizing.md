@@ -49,7 +49,7 @@ The following example demonstrates how the **TaskID** column can be configured w
 {% endhighlight %}
 {% endtabs %}
 
-![Column resize](../images/column-resize.png)
+![column resizing minimum and maximum width](../images/column-resize-min-max.png)
 
 ## Prevent resizing for particular column
 
@@ -66,7 +66,7 @@ The following example demonstrates how to disable resizing for the **TaskID** co
 {% endhighlight %}
 {% endtabs %}
 
-![Column resize](../images/column-resize.png)
+![Prevent resizing](../images/prevent-column-resizing.png)
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [resizeStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResizeStart) event.
 
@@ -92,7 +92,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 {% endhighlight %}
 {% endtabs %}
 
-![Column resize](../images/column-resize.png)
+![Column resizing modes](../images/column-resizing-modes.gif)
 
 > When the `autoFit` property of the `treeGrid` object in the Gantt instance is set to **true**, the Gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Gantt will ignore any empty space.
 
@@ -111,7 +111,7 @@ The following example demonstrates how to resize a column externally using the [
 {% endhighlight %}
 {% endtabs %}
 
-![Column resize](../images/column-resize.png)
+![Column resizing programmatically](../images/column-resizing-programmatically.gif)
 
 > The `refreshColumns` method of the `treeGrid` object in the Gantt instance is used to refresh the Gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -133,7 +133,7 @@ The following example demonstrates how to handle each resizing event separately 
 {% endhighlight %}
 {% endtabs %}
 
-![Column resize](../images/column-resize.png)
+![Column resizing events](../images/column-resizing-events.gif)
 
 > The `ResizeArgs` object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
 
@@ -153,3 +153,5 @@ To resize a column on a touch-enabled device:
 **Note:** Touch resizing works the same as desktop drag-and-drop. The column menu's AutoFit option is also available on touch devices for quick width adjustments.
 
 The screenshot below illustrates column resizing on a touch device.
+
+![Column resizing touch interaction](../images/column-resizing-touch.png)
