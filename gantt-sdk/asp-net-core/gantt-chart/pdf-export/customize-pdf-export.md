@@ -15,6 +15,20 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 Customizing PDF export in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control allows tailoring exported documents for specific needs, using `pdfExportProperties` to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with `AllowPdfExport` enabled. Use the [`BeforePdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) and [`PdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfExportComplete) events for pre-export and post-export modifications, and the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event for taskbar styling, supporting RTL layouts via `EnableRtl`.
 
+> **Prerequisite**: The PDF customization classes (such as `PdfColor`, `PdfPen`, and `PdfStringFormat`) used in the `PdfQueryCellInfo`, `PdfQueryTimelineCellInfo`, and `PdfQueryTaskbarInfo` events belong to the separate **ej2-pdf-export** library. Reference its script **before** the Gantt script in **~/Pages/Shared/\_Layout.cshtml**; otherwise, an error similar to `Cannot read properties of undefined (reading 'PdfColor')` is thrown during export.
+
+{% tabs %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
+
+<head>
+    ...
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-pdf-export.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Gantt/scripts/sf-gantt.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize file name
 
 Set the exported PDF file name using the `fileName` property in `pdfExportProperties`, such as **ProjectPlan.pdf**, for personalized document naming.
