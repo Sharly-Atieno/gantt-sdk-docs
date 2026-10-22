@@ -83,8 +83,6 @@ The following example applies a **MustStartOn** constraint:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs1" %}
-
 ![Task Constraints](images/task-constraints-placeholder.png)
 
 This code sets a task to start on July 1, 2025, with the taskbar reflecting the constraint.
@@ -123,8 +121,6 @@ The following example disables the **MustStartOn** violation popup:
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2" %}
 
 ![Handle Constraint Violations](images/constraint-violation-placeholder.png)
 

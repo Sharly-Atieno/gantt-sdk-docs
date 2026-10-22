@@ -31,8 +31,6 @@ To enable WBS in the Gantt Chart component:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs1" %}
-
 ![WBS Column](images/wbs-column-placeholder.png)
 
 > When the WBS column is enabled in the ASP.NET Core Gantt Chart using the [enableWBS](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableWBS) property set to **true**, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS Code and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy. The WBS column fields must include both **WBS Code** and **WBS Predecessor** in the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) configuration.
@@ -51,8 +49,6 @@ In the following example, WBS auto-update is enabled only during the row drag an
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs2/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs2" %}
 
 ![Managing WBS Code Updates](images/wbs-code-update-placeholder.png)
 

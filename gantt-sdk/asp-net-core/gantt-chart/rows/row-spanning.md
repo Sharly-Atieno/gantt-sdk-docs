@@ -28,7 +28,6 @@ In the example below, the **Soil test approval** cell spans across two rows in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning-cs1" %}
 
 ![Row Spanning](images/row-spanning-placeholder.png)
 

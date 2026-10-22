@@ -26,7 +26,6 @@ To enable column reordering, set the [allowReordering](https://help.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs1" %}
 
 ![Column Reordering CS1](images/column-reorder-columnreorder-cs1-placeholder.png)
 
@@ -51,7 +50,6 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs2" %}
 
 ![Column Reordering CS2](images/column-reorder-columnreorder-cs2-placeholder.png)
 
@@ -81,7 +79,6 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs3" %}
 
 ![Column Reordering CS3](images/column-reorder-columnreorder-cs3-placeholder.png)
 
@@ -105,7 +102,6 @@ The following demonstrates how to reorder the column at index **1** to position 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs5" %}
 
 ![Column Reordering CS5](images/column-reorder-columnreorder-cs5-placeholder.png)
 
@@ -129,7 +125,6 @@ The following demonstrates how to reorder a single column **TaskId** to index **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs6" %}
 
 ![Column Reordering CS6](images/column-reorder-columnreorder-cs6-placeholder.png)
 
@@ -151,6 +146,5 @@ The following demonstrates how to handle specific fields during column reorderin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs4" %}
 
 ![Column Reordering CS4](images/column-reorder-columnreorder-cs4-placeholder.png)

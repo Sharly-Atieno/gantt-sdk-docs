@@ -28,7 +28,6 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs1" %}
 
 ![Frozen Columns CS1](images/frozen-columns-frozencolumns-cs1-placeholder.png)
 
@@ -49,7 +48,6 @@ The following example demonstrates how to freeze a particular column in the Gant
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs2" %}
 
 ![Frozen Columns CS2](images/frozen-columns-frozencolumns-cs2-placeholder.png)
 
@@ -78,7 +76,6 @@ In the following example, the **TaskId** column is frozen on the left side, the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs3" %}
 
 ![Frozen Columns CS3](images/frozen-columns-frozencolumns-cs3-placeholder.png)
 
@@ -124,7 +121,6 @@ The following example demonstrates how to change the default frozen line color u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs4" %}
 
 ![Frozen Columns CS4](images/frozen-columns-frozencolumns-cs4-placeholder.png)
 
