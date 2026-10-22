@@ -26,7 +26,7 @@ To enable column reordering, set the [allowReordering](https://help.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
 
-![Column Reordering with Drag and Drop Support in ASP.NET Core Gantt Chart](images/column-reordering-with-drag-and-drop-support-in-asp-net-core-gantt-chart-placeholder.png)
+![Column Reordering with Drag and Drop Support](images/column-reordering-with-drag-and-drop-support-in-asp-net-core-gantt-chart-placeholder.png)
 
 > * You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columndrag) and [columnDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columndrop) events.
 > * After columns are reordered, the visual column index changes but field names remain the same. If your logic references column indices (e.g., `gantt.treeGrid.columns[0]`), update those references after reordering.

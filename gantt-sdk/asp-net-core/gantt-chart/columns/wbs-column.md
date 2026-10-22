@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 appliesto: UI Component Suite, Gantt SDK
 ---
 
-# WBS Column for Hierarchical Task Identification in ASP.NET Core Gantt Chart
+# Work Breakdown Structure (WBS) Column in ASP.NET Core Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 

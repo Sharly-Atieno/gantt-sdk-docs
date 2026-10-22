@@ -15,7 +15,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 ## Configure timeline view modes
 
-Set the timeline view mode using the [TimelineViewMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TimelineViewMode.html) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
+Set the timeline view mode using the [timelineViewMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TimelineViewMode.html) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
 
 ### Week timeline mode
 
