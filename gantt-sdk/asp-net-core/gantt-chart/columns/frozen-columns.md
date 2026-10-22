@@ -27,9 +27,8 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs1/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Frozen Columns CS1](images/frozen-columns-frozencolumns-cs1-placeholder.png)
+![Frozen Columns with Left and Right Pinning in ASP.NET Core Gantt Chart](images/frozen-columns-with-left-and-right-pinning-in-asp-net-core-gantt-chart-placeholder.png)
 
 ## Freeze particular columns
 
@@ -47,9 +46,8 @@ The following example demonstrates how to freeze a particular column in the Gant
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs2/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Frozen Columns CS2](images/frozen-columns-frozencolumns-cs2-placeholder.png)
+![Freeze particular columns](images/freeze-particular-columns-placeholder.png)
 
 ## Freeze direction
 
@@ -75,9 +73,8 @@ In the following example, the **TaskId** column is frozen on the left side, the 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs3/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Frozen Columns CS3](images/frozen-columns-frozencolumns-cs3-placeholder.png)
+![Freeze direction](images/freeze-direction-placeholder.png)
 
 ## Change default frozen line color
 
@@ -120,9 +117,8 @@ The following example demonstrates how to change the default frozen line color u
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/frozencolumns-cs4/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Frozen Columns CS4](images/frozen-columns-frozencolumns-cs4-placeholder.png)
+![Change default frozen line color](images/change-default-frozen-line-color-placeholder.png)
 
 ## Limitations
 

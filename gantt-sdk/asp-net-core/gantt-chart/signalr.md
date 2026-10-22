@@ -249,7 +249,7 @@ Update the page to include a fully configured Gantt Chart with data binding. Thi
 
 ```cshtml
 Index.cshtml
- 
+
 <ejs-gantt id="Gantt" height="450px" dataSource="@Model.GanttData"
            actionComplete="actionComplete" created="created">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId"></e-gantt-taskfields>

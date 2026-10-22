@@ -25,9 +25,8 @@ To enable column reordering, set the [allowReordering](https://help.syncfusion.c
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs1/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS1](images/column-reorder-columnreorder-cs1-placeholder.png)
+![Column Reordering with Drag and Drop Support in ASP.NET Core Gantt Chart](images/column-reordering-with-drag-and-drop-support-in-asp-net-core-gantt-chart-placeholder.png)
 
 > * You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columndrag) and [columnDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columndrop) events.
 > * After columns are reordered, the visual column index changes but field names remain the same. If your logic references column indices (e.g., `gantt.treeGrid.columns[0]`), update those references after reordering.
@@ -49,9 +48,8 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs2/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS2](images/column-reorder-columnreorder-cs2-placeholder.png)
+![Disable column reordering for specific columns](images/disable-column-reordering-for-specific-columns-placeholder.png)
 
 ## Reorder columns programmatically
 
@@ -78,9 +76,8 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs3/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS3](images/column-reorder-columnreorder-cs3-placeholder.png)
+![Reorder columns using field names](images/reorder-columns-using-field-names-placeholder.png)
 
 ### Reorder columns using column index
 
@@ -101,16 +98,15 @@ The following demonstrates how to reorder the column at index **1** to position 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs5/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS5](images/column-reorder-columnreorder-cs5-placeholder.png)
+![Reorder columns using column index](images/reorder-columns-using-column-index-placeholder.png)
 
 ### Reorder columns using target index
 
 **Use this method when:** You want to move multiple columns to a specific position using their field names, combining the semantic clarity of field names with positional control.
 
 You can reorder single or multiple columns in the Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#reordercolumnbytargetindex) method on `gantt.treeGrid` object. This method reorders columns based on their field names and the target index. It takes two parameters:  
-  
+
 - **fieldName**: The field name (or array of field names for multiple columns) of the column(s) to move. 
 - **toIndex**: The zero-based index where the column(s) should be placed.
 
@@ -124,9 +120,8 @@ The following demonstrates how to reorder a single column **TaskId** to index **
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs6/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS6](images/column-reorder-columnreorder-cs6-placeholder.png)
+![Reorder columns using target index](images/reorder-columns-using-target-index-placeholder.png)
 
 ## Customize column reorder behavior using events
 
@@ -145,6 +140,5 @@ The following demonstrates how to handle specific fields during column reorderin
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnreorder-cs4/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
-![Column Reordering CS4](images/column-reorder-columnreorder-cs4-placeholder.png)
+![Customize column reorder behavior using events](images/customize-column-reorder-behavior-using-events-placeholder.png)

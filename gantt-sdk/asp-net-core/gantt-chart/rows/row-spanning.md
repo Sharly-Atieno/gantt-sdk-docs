@@ -27,7 +27,6 @@ In the example below, the **Soil test approval** cell spans across two rows in t
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning-cs1/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
-  
 
 ![Row Spanning](images/row-spanning-placeholder.png)
 
