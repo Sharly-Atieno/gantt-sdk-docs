@@ -60,7 +60,7 @@ Map the following fields in `taskFields`:
 
 Include `constraintType` and `constraintDate` in your data source. For example:
 
-```tson
+```json
 {
   "taskId": 1,
   "taskName": "Design Approval",
