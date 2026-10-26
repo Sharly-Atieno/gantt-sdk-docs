@@ -112,7 +112,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnWidth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefiningColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/definingColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnWidth/columnWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
