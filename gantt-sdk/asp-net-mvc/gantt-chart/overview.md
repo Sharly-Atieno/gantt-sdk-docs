@@ -27,6 +27,6 @@ The Gantt chart is a project management tool which provides a Microsoft Project-
 - [Timezone](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/timezone) - It explains the Gantt Chart schedules project in their respective timezones.
 - [Columns](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/columns) – Customize the columns and add custom columns to Gantt chart at initialization.
 - [Resources](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/resources) - Resources are represented by staff, equipment, materials, and more. We can show and allocate the resources for each task.
-- [Filtering](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering) – Support for filtering individual column using menu filtering along with toolbar search box.
+- [Filtering](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/filtering) – Support for filtering individual column using menu filtering along with toolbar search box.
 - [Data markers or indicators](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-markers) – Support for displaying indicators and flags along with taskbars and task labels.
 - [Event markers and Holidays](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/event-markers) - Highlight important days or events in a project using event markers and define non-working days in a project using holidays.

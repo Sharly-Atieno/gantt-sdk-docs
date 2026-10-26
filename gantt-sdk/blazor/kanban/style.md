@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # Styling and Appearance with CSS and Theme Support in Blazor Kanban
 
-Customize the appearance of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) by overriding its default CSS styles. Custom themes can also be created using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Refer to the list of Kanban CSS classes for additional styling options.
+Customize the appearance of the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) by overriding its default CSS styles. Custom themes can also be created using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Refer to the list of Kanban CSS classes for additional styling options.
 
 | CSS class | Purpose |
 |-------|---------|
