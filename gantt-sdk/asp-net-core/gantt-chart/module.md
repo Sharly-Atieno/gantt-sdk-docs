@@ -18,14 +18,14 @@ This approach lets you configure the features required by the page without addin
 
 ## Inject modules
 
-ASP.NET Core applications register the Gantt Tag Helpers and script resources instead of injecting individual feature modules. Add the Tag Helpers in **\_ViewImports.cshtml**:
+ASP.NET Core applications register the Gantt Tag Helpers and script resources instead of injecting individual feature modules. Add the Tag Helpers in **\ViewImports.cshtml**:
 
 ```cshtml
-@addTagHelper _, Syncfusion.AspNetCore.Gantt
-@addTagHelper _, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Gantt
+@addTagHelper *, Syncfusion.AspNetCore.Base
 ```
 
-Reference the Gantt client script and register the script manager in **\_Layout.cshtml**:
+Reference the Gantt client script and register the script manager in **\Layout.cshtml**:
 
 ```cshtml
 <head>
