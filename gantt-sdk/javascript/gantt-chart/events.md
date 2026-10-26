@@ -1180,7 +1180,7 @@ console.log(`Cell deselecting at row ${index.rowIndex}, column ${colIndex} at ${
 
 The [cellEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
 
-The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/cellEditArgs) with the following properties:
+The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/celleditargs) with the following properties:
 
 | **Property**      | **Type**    | **Description**                                      |
 | ----------------- | ----------- | ---------------------------------------------------- |
@@ -2694,7 +2694,7 @@ console.log("Gantt component destroyed.", args);
 
 The [endEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#endedit) event is triggered after a task is modified through cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbareditedeventargs) with the following properties:
 
 | **Property**        | **Type**   | **Description**                                    |
 | ------------------- | ---------- | -------------------------------------------------- |
@@ -7304,7 +7304,7 @@ alert(`Task "${editedTask.TaskName}" was updated via ${actionType}.`);
 
 The [taskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt Chart. It enables actions that respond to live taskbar changes, such as enforcing constraints, updating tooltips, or canceling edits based on conditions.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbareditedeventargs) with the following properties:
 
 | **Property**        | **Type**   | **Description**                          |
 | ------------------- | ---------- | ---------------------------------------- |
