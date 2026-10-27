@@ -73,7 +73,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`            | string   | Describes the type of request, typically **filtering**.  |
 | `type`                   | string   | Event type identifier.                                   |
 
-**5. [SortEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/sortEventArgs) (Sorting)**
+**5. [SortEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/sorteventargs) (Sorting)**
 
 | **Property**  | **Type** | **Description**                                       |
 | ------------- | -------- | ----------------------------------------------------- |
@@ -926,7 +926,7 @@ args.content = `<div><b>${task.TaskName}</b><br>Progress: ${task.Progress}%<br>D
 
 The [cellDeselected](https://ej2.syncfusion.com/javascript/documentation/api/gantt#celldeselected) event is triggered when a selected cell in the Gantt component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellDeselectEventArgs) with the following properties:
+The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/celldeselecteventargs) with the following properties:
 
 | **Property**  | **Type** | **Description**                               |
 | ------------- | -------- | --------------------------------------------- |
@@ -1317,7 +1317,7 @@ return;
 
 The [cellSelected](https://ej2.syncfusion.com/javascript/documentation/api/gantt#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
 
-The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellSelectEventArgs) with the following properties:
+The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellselecteventargs) with the following properties:
 
 | **Property**           | **Type**  | **Description**                            |
 | ---------------------- | --------- | ------------------------------------------ |
